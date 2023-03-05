@@ -8,7 +8,7 @@ import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
 
-class WishlistAdapter(private val items: List<Item>) : RecyclerView.Adapter<WishlistAdapter.ViewHolder>(){
+class WishlistAdapter(private val items: List<DisplayArticle>) : RecyclerView.Adapter<WishlistAdapter.ViewHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val context = parent.context
         val inflater = LayoutInflater.from(context)

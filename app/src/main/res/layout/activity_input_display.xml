@@ -4,31 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".InputDisplay">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:text="SUBMIT"
+        android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.886"
         app:layout_constraintStart_toStartOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:hint="Hours"
+        android:hint="Price"
         android:inputType="number|numberDecimal"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0.982">
+        app:layout_constraintStart_toStartOf="parent">
 
     </EditText>
 
@@ -36,7 +34,7 @@
         android:id="@+id/text2"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:hint="Workout"
+        android:hint="Item Name"
         app:layout_constraintBottom_toTopOf="@+id/text3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.12"
@@ -50,21 +48,11 @@
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginBottom="4dp"
-        android:hint="Day of Week"
+        android:hint="Enter URL"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent">
     </EditText>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/wishRV"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/text2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
